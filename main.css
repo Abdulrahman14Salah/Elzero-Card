@@ -7,14 +7,14 @@
 
 body {
     background-color:#EEEEEE;
-    margin:200px;
     font-family:sans-serif;
+    height: 70vh;
 }
 
 .all {
-    margin: auto;
+    margin: 150px auto;
     padding: 10px;
-    width: 500px;
+    max-width: 500px;
     height: 350px;
     background-color: white;
     border-radius: 10px;
@@ -39,20 +39,20 @@ p {
 }
 
 p::after {
-    content:"";
-    width:450px;
-    height:3px;
-    background-color:#EEEEEE;
-    position:absolute;
-    top:40px;
-    left:-135px;
+    content: "";
+    width: 450px;
+    height: 2px;
+    background-color: #EEEEEE;
+    position: absolute;
+    top: 23px;
+    right: 184px;
 }
 .social {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 5px;
 }
-.social .face , .social .twitt , .social .linkde {
+.social .face , .social .twitt , .social .linkde ,.social .github{
     display:flex;
     width:460px;
     height:50px;
@@ -75,6 +75,10 @@ p::after {
     color: #0a66c2;
     text-decoration: none;
 }
+.social .github a {
+    color: #24292f;
+    text-decoration: none;
+}
 .social  a:hover {
     color: #888897;
     
@@ -92,6 +96,11 @@ p::after {
 .linkde div {
     font-weight: bold;
     color: #0a66c2;
+    cursor: default;
+}
+.github div {
+    font-weight: bold;
+    color: #24292f;
     cursor: default;
 }
 a {
