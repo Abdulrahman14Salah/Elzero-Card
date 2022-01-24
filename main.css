@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+body {
+    background-color:#EEEEEE;
+    margin:200px;
+    font-family:sans-serif;
+}
+
+.all {
+    margin: auto;
+    padding: 10px;
+    width: 500px;
+    height: 350px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 10px -1px 2px 2px #E6E6E6;
+}
+
+img {
+    position: absolute;
+    top: -110px;
+    left: 200px;
+}
+
+h3 {
+    transform: translate(32%, 150%);
+    color: #3B74BA;
+}
+
+p {
+    transform: translate(35%, 40px);
+    color:#888897;
+}
+
+p::after {
+    content:"";
+    width:450px;
+    height:3px;
+    background-color:#EEEEEE;
+    position:absolute;
+    top:40px;
+    left:-135px;
+}
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+.social .face , .social .twitt , .social .linkde {
+    display:flex;
+    width:460px;
+    height:50px;
+    justify-content:space-between;
+    align-items:center;
+    background-color:#F6F6F6;
+    padding-left:10px;
+    transform:translate(2% , 110%);
+    margin-bottom:5px;
+}
+.social .face a {
+    color: #3b74ba;
+    text-decoration: none;
+}
+.social .twitt a {
+    color: #1d9bf0;
+    text-decoration: none;
+}
+.social .linkde a {
+    color: #0a66c2;
+    text-decoration: none;
+}
+.social  a:hover {
+    color: #888897;
+    
+}
+.face div {
+    font-weight: bold;
+    color: #3b74ba;
+    cursor: default;
+}
+.twitt div {
+    font-weight: bold;
+    color: #1d9bf0;
+    cursor: default;
+}
+.linkde div {
+    font-weight: bold;
+    color: #0a66c2;
+    cursor: default;
+}
+a {
+	display: block;
+	line-height: 50px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5rem;
+    width: 180px;
+    height: 50px;
+	background-color: #F6F6F6;
+	position: relative;
+	overflow: hidden;
+}
+
+a::after {
+	position: absolute;
+	content: "";
+	width: calc(100% + 100px);
+	height: 60px;
+	background-color: white;
+	left: calc(-100% - 20px);
+	top: 50%;
+	transform: translate(-50px, -50%) rotate(-45deg);
+	transition: left 0.6s, opacity 0s 0.6s;
+}
+
+a:hover::after {
+	left: calc(100% + 20px);
+	opacity: 0;
+}
+
+span {
+    background-color:#3B74BA;
+    position:absolute;
+    width:35px;
+    height:35px;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    border-radius:5px;
+    bottom:-15px;
+    right:20px;
+}
