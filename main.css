@@ -1,156 +1,151 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-transform: capitalize;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
 }
-
 body {
-    background-color:#EEEEEE;
-    font-family:sans-serif;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
+  background-color: #eeeeee;
+  font-family: sans-serif;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
 }
 img {
-    position: absolute;
-    top: -109px;
-    left: 40%;
+  position: absolute;
+  top: -109px;
+  left: 40%;
 }
-
 h3 {
-    text-align: center;
-    color: #3B74BA;
+  text-align: center;
+  color: #3b74ba;
 }
-
 p {
-    color: #888897;
-    text-align: center;
+  color: #888897;
+  text-align: center;
 }
-
 .all {
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-    margin: 150px auto;
-    padding: 15px;
-    max-width: 500px;
-    height: 350px;
-    background-color: white;
-    border-radius: 10px;
-    position: relative;
-    box-shadow: 10px -1px 2px 2px #E6E6E6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 150px auto;
+  padding: 15px;
+  max-width: 500px;
+  height: 350px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0px 0px 11px 6px rgb(36 41 47 / 16%);
 }
 .all .title {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 .all .hr {
-    Width: 100%;
-    Height: 2px;
-    background-color: #ddd;
+  width: 100%;
+  height: 2px;
+  background-color: #ddd;
 }
 .social {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
 }
-.social .face , .social .twitt , .social .linkde ,.social .github{
-    display:flex;
-    width:100%;
-    height:50px;
-    justify-content:space-between;
-    align-items:center;
-    background-color:#F6F6F6;
-    padding:10px;
-    margin-bottom:5px;
+.social .face,
+.social .twitt,
+.social .linkde,
+.social .github {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0px 0px 3px 0px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f6f6f6;
+  padding: 10px;
+  margin-bottom: 5px;
 }
 .social .face a {
-    color: #3b74ba;
-    text-decoration: none;
+  color: #3b74ba;
+  text-decoration: none;
 }
 .social .twitt a {
-    color: #1d9bf0;
-    text-decoration: none;
+  color: #1d9bf0;
+  text-decoration: none;
 }
 .social .linkde a {
-    color: #0a66c2;
-    text-decoration: none;
+  color: #0a66c2;
+  text-decoration: none;
 }
 .social .github a {
-    color: #24292f;
-    text-decoration: none;
+  color: #24292f;
+  text-decoration: none;
 }
-.social  a:hover {
-    color: #888897;
-    
+.social a:hover {
+  color: #888897;
 }
 .face div {
-    font-weight: bold;
-    color: #3b74ba;
-    cursor: default;
+  font-weight: bold;
+  color: #3b74ba;
+  cursor: default;
 }
 .twitt div {
-    font-weight: bold;
-    color: #1d9bf0;
-    cursor: default;
+  font-weight: bold;
+  color: #1d9bf0;
+  cursor: default;
 }
 .linkde div {
-    font-weight: bold;
-    color: #0a66c2;
-    cursor: default;
+  font-weight: bold;
+  color: #0a66c2;
+  cursor: default;
 }
 .github div {
-    font-weight: bold;
-    color: #24292f;
-    cursor: default;
+  font-weight: bold;
+  color: #24292f;
+  cursor: default;
 }
 a {
-	display: block;
-	line-height: 50px;
-	text-align: center;
-	font-weight: bold;
-	font-size: 1.5rem;
-    width: 100%;
-    height: 50px;
-	background-color: #F6F6F6;
-	position: relative;
-	overflow: hidden;
+  display: block;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 50px;
+  background-color: #f6f6f6;
+  position: relative;
+  overflow: hidden;
 }
-
 a::after {
-	position: absolute;
-	content: "";
-	width: calc(100% + 100px);
-	height: 60px;
-	background-color: white;
-	left: calc(-100% - 20px);
-	top: 50%;
-	transform: translate(-50px, -50%) rotate(-45deg);
-	transition: left 0.6s, opacity 0s 0.6s;
+  position: absolute;
+  content: "";
+  width: calc(100% + 100px);
+  height: 60px;
+  background-color: white;
+  left: calc(-100% - 20px);
+  top: 50%;
+  transform: translate(-50px, -50%) rotate(-45deg);
+  transition: left 0.6s, opacity 0s 0.6s;
 }
-
 a:hover::after {
-	left: calc(100% + 20px);
-	opacity: 0;
+  left: calc(100% + 20px);
+  opacity: 0;
 }
-
 span {
-    background-color:#3B74BA;
-    position:absolute;
-    width:35px;
-    height:35px;
-    color:white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-weight:bold;
-    border-radius:5px;
-    bottom:-15px;
-    right:20px;
+  background-color: #3b74ba;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 5px;
+  bottom: -15px;
+  right: 20px;
 }
-
 @media (max-width: 519px) {
-    .all {
-        transform: scale(0.7);
-    }
+  .all {
+    transform: scale(0.7);
+  }
 }
