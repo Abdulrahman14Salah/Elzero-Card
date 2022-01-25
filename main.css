@@ -44,6 +44,11 @@ p {
 .all .title {
     margin-top: 2rem;
 }
+.all .hr {
+    Width: 100%;
+    Height: 2px;
+    background-color: #ddd;
+}
 .social {
     display: flex;
     flex-wrap: wrap;
